@@ -8,7 +8,7 @@ Sys.setenv("AWS_ACCESS_KEY_ID" = "ASIARRH55YXE7THBDKEF",
 
 bucketlist()
 
-bucket_name <- "tec-dev-usvga-dhr-raw-01"
+bucket_name <- "tec-tst-usvga-dhr-raw-01"
 #file_path_in_s3 <- "s3://tec-dev-usvga-dhr-raw-01/Business_Function/GI2/test_from_TAGG.sas7bdat"
 file_path_in_s3 <- "Business_Function/GI2/CARS.sas7bdat"
 
@@ -33,10 +33,12 @@ print(sas_data)
 
 test = sas_data
 
+bucket_trusted <- "tec-tst-usvga-dhr-trusted-01"
+
 s3write_using(
   x = sas_data,
   FUN = write.csv,
-  bucket = bucket_name,
+  bucket = bucket_trusted,
   object = "Business_Function/GI2/test",
   row.names = FALSE # Prevents R from writing row numbers to the CSV
 )
