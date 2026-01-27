@@ -23,6 +23,8 @@ save_object(
   file = temp_file
 )
 
+library(haven)
+
 # Read the SAS file into R
 sas_data <- read_sas(temp_file)
 
