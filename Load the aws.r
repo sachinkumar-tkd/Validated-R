@@ -39,6 +39,6 @@ s3write_using(
   x = sas_data,
   FUN = write.csv,
   bucket = bucket_trusted,
-  object = "Business_Function/GI2/test",
+  object = "Business_Function/GI2/test.rtf",
   row.names = FALSE # Prevents R from writing row numbers to the CSV
 )
