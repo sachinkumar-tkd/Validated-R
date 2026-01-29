@@ -10,7 +10,7 @@ bucketlist()
 
 bucket_name <- "tec-tst-usvga-dhr-raw-01"
 #file_path_in_s3 <- "s3://tec-dev-usvga-dhr-raw-01/Business_Function/GI2/test_from_TAGG.sas7bdat"
-file_path_in_s3 <- "Business_Function/GI2/CARS.sas7bdat"
+file_path_in_s3 <- "Business_Function/GI2/poisson.sas7bdat"
 
 
 # Create a temporary file path
